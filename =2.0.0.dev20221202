@@ -1,0 +1,23 @@
+Collecting triton
+  Downloading triton-2.0.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (63.3 MB)
+Requirement already satisfied: torch in /home/yalt/.local/lib/python3.9/site-packages (from triton) (1.13.0)
+Collecting cmake
+  Downloading cmake-3.25.2-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (23.7 MB)
+Collecting lit
+  Downloading lit-15.0.7.tar.gz (132 kB)
+Requirement already satisfied: filelock in /home/yalt/.local/lib/python3.9/site-packages (from triton) (3.8.0)
+Requirement already satisfied: nvidia-cudnn-cu11==8.5.0.96 in /home/yalt/.local/lib/python3.9/site-packages (from torch->triton) (8.5.0.96)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu11==11.7.99 in /home/yalt/.local/lib/python3.9/site-packages (from torch->triton) (11.7.99)
+Requirement already satisfied: typing-extensions in /home/yalt/.local/lib/python3.9/site-packages (from torch->triton) (4.4.0)
+Requirement already satisfied: nvidia-cuda-runtime-cu11==11.7.99 in /home/yalt/.local/lib/python3.9/site-packages (from torch->triton) (11.7.99)
+Requirement already satisfied: nvidia-cublas-cu11==11.10.3.66 in /home/yalt/.local/lib/python3.9/site-packages (from torch->triton) (11.10.3.66)
+Requirement already satisfied: setuptools in /home/yalt/.local/lib/python3.9/site-packages (from nvidia-cublas-cu11==11.10.3.66->torch->triton) (67.4.0)
+Requirement already satisfied: wheel in /usr/lib/python3/dist-packages (from nvidia-cublas-cu11==11.10.3.66->torch->triton) (0.34.2)
+Building wheels for collected packages: lit
+  Building wheel for lit (setup.py): started
+  Building wheel for lit (setup.py): finished with status 'done'
+  Created wheel for lit: filename=lit-15.0.7-py3-none-any.whl size=89989 sha256=93b33200e91ba2b2054edef8a9cbef47bb6dee154d2e73ea141a20f138daaa73
+  Stored in directory: /home/yalt/.cache/pip/wheels/b7/68/18/2ad49b416abb9139c8217c349fd9df0674da8f0d1952db2ea5
+Successfully built lit
+Installing collected packages: lit, cmake, triton
+Successfully installed cmake-3.25.2 lit-15.0.7 triton-2.0.0
